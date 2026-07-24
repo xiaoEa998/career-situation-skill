@@ -16,7 +16,7 @@
 
 ## 最简单的使用方式
 
-把 [`skills/diagnose-career-situation`](skills/diagnose-career-situation) 整个文件夹安装到支持 `SKILL.md` 的 AI Agent，然后说：
+把 [`skills/diagnose-career-situation`](skills/diagnose-career-situation) 整个文件夹安装到支持 Skill 的 AI Agent，然后说：
 
 > 帮我梳理当前职业处境。我会提供真实工作案例，请区分事实、推断、假设和待验证项，并给我一个7天内能执行的行动。
 
@@ -39,17 +39,19 @@ skills/diagnose-career-situation/
 
 核心 `SKILL.md` 只保留执行流程。访谈、证据规则和报告模板由 Agent 在需要时读取，避免一次加载过多内容。
 
-## 安装到 Codex
+## 国内用户怎么用
 
-下载本仓库后，将 `skills/diagnose-career-situation` 文件夹复制到：
+如果不熟悉开发工具或网络配置，建议优先选择在国内网络可以直接访问、提供中文界面和可视化 Skill 管理的 Agent，例如 [WorkBuddy](https://www.workbuddy.cn/)。
 
-```text
-%USERPROFILE%\.codex\skills\
-```
+WorkBuddy 当前提供 Skills、SkillHub 和 Marketplace。下载并解压本仓库后，可以在其 Skill 管理界面查找“添加”或“导入”入口，并选择 `skills/diagnose-career-situation` 文件夹。不同版本的按钮名称和支持方式可能变化，请以产品当前界面为准。
 
-重新打开 Codex 后，可以用 `$diagnose-career-situation` 明确调用。
+如果使用的 Agent 暂时不能安装 Skill，也不必进行复杂配置：
 
-不同 Agent 对 Skill 的目录和安装方式可能不同，请以相应产品的当前说明为准。
+1. 打开 [`intake-form.md`](skills/diagnose-career-situation/assets/intake-form.md) 并填写；
+2. 将填写后的内容和 [`SKILL.md`](skills/diagnose-career-situation/SKILL.md) 一起上传给支持文件或长文本的 AI；
+3. 告诉它：“请按照 SKILL.md 的流程，帮我梳理当前职业处境。”
+
+技术用户也可以把该文件夹安装到其他支持 `SKILL.md` 的 Agent。不同产品的安装方法不同，请以相应产品的当前说明为准。
 
 ## 隐私与边界
 
