@@ -83,5 +83,3 @@ skills/diagnose-career-situation/
 ## 开源许可
 
 本项目采用 MIT License。你可以使用、修改和再发布，但需要保留版权和许可声明。
-# career-situation-skill
-用四张钱图梳理职业处境、能力证据、利益关系与下一步行动的开源 AI Skill
