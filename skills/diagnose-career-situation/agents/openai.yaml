@@ -1,0 +1,4 @@
+interface:
+  display_name: "弄清楚职业处境"
+  short_description: "用四张钱图梳理职业处境、能力证据、利益关系与下一步行动"
+  default_prompt: "使用 $diagnose-career-situation 帮我梳理当前职业处境，并给出一个可验证的下一步。"
